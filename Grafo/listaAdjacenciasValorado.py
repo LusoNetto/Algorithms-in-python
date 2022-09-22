@@ -4,7 +4,7 @@ class Grafo:
         self.grafo = [[] for i in range(self.vertices)]
     def adiciona_aresta(self, u, v, peso):
         # estamos pensando em grafo direcionado
-        self.grafo[u-1].append([v, peso])
+        self.grafo[u-1].append([v,peso])
         # self.grafo[v-1].append(u) se o grafo não for direcionado
     def mostra_lista(self):
         for i in range(self.vertices):
